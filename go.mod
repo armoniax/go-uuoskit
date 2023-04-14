@@ -1,4 +1,4 @@
-module github.com/armoniax/go-uuoskit
+module github.com/cryptoseeking/go-uuoskit
 
 go 1.17
 
