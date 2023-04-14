@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
+	secp256k1 "github.com/cryptoseeking/go-secp256k1"
 	"github.com/iancoleman/orderedmap"
-	secp256k1 "github.com/uuosio/go-secp256k1"
 )
 
 type ABITable struct {

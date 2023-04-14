@@ -28,9 +28,9 @@ import (
 	"runtime"
 	"unsafe"
 
+	"github.com/armoniax/go-uuoskit/uuoskit"
+	secp256k1 "github.com/cryptoseeking/go-secp256k1"
 	traceable_errors "github.com/go-errors/errors"
-	secp256k1 "github.com/uuosio/go-secp256k1"
-	"github.com/uuosio/go-uuoskit/uuoskit"
 )
 
 func renderData(data interface{}) *C.char {
