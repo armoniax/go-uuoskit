@@ -1,7 +1,7 @@
 github.com/akamensky/base58 v0.0.0-20210829145138-ce8bf8802e8f h1:z8MkSJCUyTmW5YQlxsMLBlwA7GmjxC7L4ooicxqnhz8=
 github.com/akamensky/base58 v0.0.0-20210829145138-ce8bf8802e8f/go.mod h1:UdUwYgAXBiL+kLfcqxoQJYkHA/vl937/PbFhZM34aZs=
-github.com/cryptoseeking/go-secp256k1 v0.0.0-20230414065747-dff2bdd8416d h1:ozf32Na7gZJaIbjvr+G9q//X9F9AJ+G962+F03fOD/Q=
-github.com/cryptoseeking/go-secp256k1 v0.0.0-20230414065747-dff2bdd8416d/go.mod h1:XuIh8b+rYfKYvCX1iycE9Oisp/tc+Gka/7oOXkXlq30=
+github.com/cryptoseeking/go-secp256k1 v0.0.0-20230418025037-b97a89e3380b h1:VbflChNqMFuLy0vqN0WnOAr2EbTefg2Ka14xO1aK/GY=
+github.com/cryptoseeking/go-secp256k1 v0.0.0-20230418025037-b97a89e3380b/go.mod h1:XuIh8b+rYfKYvCX1iycE9Oisp/tc+Gka/7oOXkXlq30=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-errors/errors v1.4.1 h1:IvVlgbzSsaUNudsw5dcXSzF3EWyXTi5XrAdngnuhRyg=

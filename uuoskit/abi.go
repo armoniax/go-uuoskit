@@ -637,7 +637,7 @@ func (t *ABI) unpackAbiStructField(dec *Decoder, typ string) (interface{}, error
 		}
 		pub := secp256k1.PublicKey{}
 		copy(pub.Data[:], v[1:])
-		return pub.StringEOS(), nil
+		return pub.StringAM(), nil
 	case "signature":
 		v := make([]byte, 66)
 		err := dec.Read(v)
