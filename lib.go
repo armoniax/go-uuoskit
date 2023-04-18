@@ -28,9 +28,9 @@ import (
 	"runtime"
 	"unsafe"
 
+	secp256k1 "github.com/armoniax/go-secp256k1"
+	"github.com/armoniax/go-uuoskit/uuoskit"
 	traceable_errors "github.com/go-errors/errors"
-	secp256k1 "github.com/uuosio/go-secp256k1"
-	"github.com/uuosio/go-uuoskit/uuoskit"
 )
 
 func renderData(data interface{}) *C.char {
@@ -597,7 +597,7 @@ func crypto_get_public_key_(privateKey *C.char, eosPub C.int) *C.char {
 	if eosPub == 0 {
 		return renderData(pub.String())
 	} else {
-		return renderData(pub.StringEOS())
+		return renderData(pub.StringAM())
 	}
 }
 
@@ -619,7 +619,7 @@ func crypto_recover_key_(digest *C.char, signature *C.char, format C.int) *C.cha
 	}
 
 	if format == 1 {
-		return renderData(pub.StringEOS())
+		return renderData(pub.StringAM())
 	} else {
 		return renderData(pub.String())
 	}
@@ -638,7 +638,7 @@ func CreateKey(oldPubKeyFormat bool) map[string]string {
 	ret := make(map[string]string)
 	ret["private"] = _priv.String()
 	if oldPubKeyFormat {
-		ret["public"] = _priv.GetPublicKey().StringEOS()
+		ret["public"] = _priv.GetPublicKey().StringAM()
 	} else {
 		ret["public"] = _priv.GetPublicKey().String()
 	}

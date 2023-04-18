@@ -1,7 +1,7 @@
 package uuoskit
 
 import (
-	secp256k1 "github.com/uuosio/go-secp256k1"
+	secp256k1 "github.com/armoniax/go-secp256k1"
 )
 
 type Wallet struct {
@@ -25,7 +25,7 @@ func (w *Wallet) Import(name string, strPriv string) error {
 	}
 
 	pub := priv.GetPublicKey()
-	w.keys[pub.StringEOS()] = priv
+	w.keys[pub.StringAM()] = priv
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (w *Wallet) Remove(name string, pubKey string) bool {
 		return false
 	}
 
-	pubKey = _pubKey.StringEOS()
+	pubKey = _pubKey.StringAM()
 	if priv, ok := w.keys[pubKey]; ok {
 		for i := 0; i < len(w.keys); i++ {
 			priv.Data[i] = 0
@@ -69,7 +69,7 @@ func (w *Wallet) Sign(digest []byte, pubKey string) (*secp256k1.Signature, error
 		return nil, newError(err)
 	}
 
-	priv, ok := w.keys[pub.StringEOS()]
+	priv, ok := w.keys[pub.StringAM()]
 	if !ok {
 		return nil, newErrorf("not found")
 	}

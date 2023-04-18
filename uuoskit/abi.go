@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
+	secp256k1 "github.com/armoniax/go-secp256k1"
 	"github.com/iancoleman/orderedmap"
-	secp256k1 "github.com/uuosio/go-secp256k1"
 )
 
 type ABITable struct {
@@ -637,7 +637,7 @@ func (t *ABI) unpackAbiStructField(dec *Decoder, typ string) (interface{}, error
 		}
 		pub := secp256k1.PublicKey{}
 		copy(pub.Data[:], v[1:])
-		return pub.StringEOS(), nil
+		return pub.StringAM(), nil
 	case "signature":
 		v := make([]byte, 66)
 		err := dec.Read(v)
