@@ -1,7 +1,7 @@
 github.com/akamensky/base58 v0.0.0-20210829145138-ce8bf8802e8f h1:z8MkSJCUyTmW5YQlxsMLBlwA7GmjxC7L4ooicxqnhz8=
 github.com/akamensky/base58 v0.0.0-20210829145138-ce8bf8802e8f/go.mod h1:UdUwYgAXBiL+kLfcqxoQJYkHA/vl937/PbFhZM34aZs=
-github.com/armoniax/go-secp256k1 v0.0.0-20230418065446-1142a7cf9952 h1:YS8vmt0dp1C7sO/pNuAhb94qgYA7IJFs7NTHwJQ9u7s=
-github.com/armoniax/go-secp256k1 v0.0.0-20230418065446-1142a7cf9952/go.mod h1:on9u2grpaFddN3zeGelHfQ5wiBRqiaml4drz7xW4ZUU=
+github.com/armoniax/go-secp256k1 v0.101.1 h1:oTN/Y7KiyMLgraPzn+lsO9tCDjqAaRMOIENwqlD8B0M=
+github.com/armoniax/go-secp256k1 v0.101.1/go.mod h1:on9u2grpaFddN3zeGelHfQ5wiBRqiaml4drz7xW4ZUU=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-errors/errors v1.4.1 h1:IvVlgbzSsaUNudsw5dcXSzF3EWyXTi5XrAdngnuhRyg=
