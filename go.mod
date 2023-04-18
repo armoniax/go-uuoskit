@@ -1,9 +1,9 @@
-module github.com/cryptoseeking/go-uuoskit
+module github.com/armoniax/go-uuoskit
 
 go 1.17
 
 require (
-	github.com/cryptoseeking/go-secp256k1 v0.0.0-20230418025037-b97a89e3380b
+	github.com/armoniax/go-secp256k1 v0.0.0-20230418065446-1142a7cf9952
 	github.com/go-errors/errors v1.4.1
 	github.com/iancoleman/orderedmap v0.2.0
 	github.com/stretchr/testify v1.7.0

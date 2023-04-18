@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	secp256k1 "github.com/cryptoseeking/go-secp256k1"
+	secp256k1 "github.com/armoniax/go-secp256k1"
 	"github.com/iancoleman/orderedmap"
 )
 

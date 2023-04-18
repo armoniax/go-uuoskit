@@ -28,8 +28,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	secp256k1 "github.com/cryptoseeking/go-secp256k1"
-	"github.com/cryptoseeking/go-uuoskit/uuoskit"
+	secp256k1 "github.com/armoniax/go-secp256k1"
+	"github.com/armoniax/go-uuoskit/uuoskit"
 	traceable_errors "github.com/go-errors/errors"
 )
 
